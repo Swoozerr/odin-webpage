@@ -1,0 +1,221 @@
+body { /* body tag*/
+    display: flex;
+    flex-direction: column; /* top down */
+    margin: 0;
+    font-family: 'Hero New', sans-serif;
+}
+
+/* HEADER ---------------------------- */
+
+.header {
+    background: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px; /* 0px from top bottom, 200px from left and right */
+}
+
+.header-text{
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.header ul { /* header list of links */
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0; 
+    gap: 24px; /* px inbetween each li element */
+    
+}
+
+.header a { /* remove blue underline and color */
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/* CONTENT ---------------------------- */
+    /* SIGNUP TOP  --------------------------- */
+
+.signup-top {
+    background: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px; /* 100px from top bottom, 200px from left and right */
+    gap: 72px; /* gap between text content and image */
+} 
+
+.signup-top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.signup-top-text h1 { 
+    display: flex;
+    color: #f9faf8;
+    margin: 0; /* WHY DO HEADERS AND PARAGRAPHS HAVE DEFAULT MARGINS RAAAAAAAAAAAAAAAAAA*/
+    font-size: 48px;
+}
+
+.signup-top-text p {
+    display: flex;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin: 0 0 16px 0;
+}
+
+.signup-top-text button {
+    background-color: #3882f6;
+    border: none; /* gets rid of bevels */
+    border-radius: 4px; /* this rounds the corners */
+    margin: 0;
+    max-width: 92px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.signup-top img {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    flex: 0 1 auto;
+    border: 10px solid;
+    border-image: linear-gradient(45deg,purple, red,orange) 10; /* from https://dev.to/afif/border-with-gradient-and-radius-387f */
+}
+
+.signup-top .container {
+    color: #f9faf8;
+    font-style: italic;
+    text-align: center;
+}
+
+    /* INFORMATION --------------------------- */
+
+.information {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px 100px; 
+    
+}
+
+.information h1 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 800; /* extra bold */
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column; /* we have the img stacked on top of some text */
+    align-items: center; /* aligns the particular items of icon in the center rather than content as a whole */
+    max-width: 200px; /* makes it so the max size of the icon object is constant and not based on size of icon-container */
+    gap: 20px; /* gap btwn img and text, could also do margin bottom on icon img */
+}
+
+.icon img { /* note since this is not flex, width and height will be the size of the icon img no matter what */
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 20px;
+}
+
+.icon .text {
+    font-size: 14px;
+    color: #1f2937;
+    text-align: center;
+}
+
+    /* QUOTE ----------------------------- */
+
+.quote {
+    display: flex;
+    background-color: #e5e7eb;
+    flex-direction: column;
+    padding: 100px 400px;
+    justify-content: center;
+}
+
+.quote-text {
+    display: flex;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quoted {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+    /* CALL TO ACTION ----------------------------- */
+
+.call-to-action {
+    padding: 100px 250px;
+}
+
+.call-to-action .background {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 50px 100px;
+    flex-wrap: wrap;
+}
+
+.call-to-action .container .text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.call-to-action .container p {
+    margin: 0;
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+.call-to-action .signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid #f9faf8;
+    padding: 4px 20px;
+    max-height: 52px;
+    max-width: 140px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+
+/* FOOTER ---------------------------- */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 50px;
+}
